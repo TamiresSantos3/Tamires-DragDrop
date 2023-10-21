@@ -1,0 +1,78 @@
+html{
+    font-family: 'Nunito';
+}
+
+body{
+    background-color: rgb(240, 238, 238);
+    color:rgb(0, 0, 0) ;
+}
+
+div {
+    display: inline-block;
+   
+}
+
+#Afazer {
+    background: rgb(119, 102, 102) ;
+    border: 3px solid rgb(250, 44, 140);
+    border-radius: 4px;
+    float: left;
+    width: 280px;
+    height: 330px;
+    padding: 10px;
+    margin: 12px;
+    font-weight: bold;
+    
+}
+
+#andamento {
+    background: rgb(119, 102, 102) ;
+    border: 3px solid rgb(250, 44, 140);
+    border-radius: 4px;
+    float: left;
+    width: 280px;
+    height: 330px;
+    padding: 10px;
+    margin: 12px;
+    font-weight: bold;
+}
+
+#feito {
+    background: rgb(119, 102, 102) ;
+    border: 3px solid rgb(250, 44, 140);
+    border-radius: 4px;
+    float: left;
+    width: 280px;
+    height: 330px;
+    padding: 10px;
+    margin: 12px;
+    font-weight: bold;
+}
+#tarefa1 {
+    background: rgb(160, 194, 125);
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+#tarefa2 {
+    background: rgb(160, 194, 125);
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+#tarefa3 {
+    background: rgb(160, 194, 125);
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+#tarefa4 {
+    background: rgb(160, 194, 125);
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+}
+

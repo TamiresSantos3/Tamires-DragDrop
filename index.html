@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afazeres - Tamires</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+<script>
+
+    function dragStart(ev) {
+    ev.dataTransfer.setData("ID",ev.target.getAttribute('id'));
+}
+
+function dragOver(ev) {
+    return false;
+}
+
+function dragDrop(acao) {
+    var tarefaSelecionada = acao.dataTransfer.getData("ID");
+    acao.target.appendChild(document.getElementById(tarefaSelecionada));
+    
+}
+</script>
+</head>
+
+<body>
+    
+        <header>
+             <h1> Agenda de Afazeres</h1>
+         </header>
+    
+            <div id="Afazer" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+             A Fazer 
+             <br>
+             <div id="tarefa1"  draggable=true ondragstart="return dragStart(event)" > Fazer compras </div>
+
+                <br>
+             <div id="tarefa2"  draggable="true" ondragstart="return dragStart(event)"> Levar o cachorro para o pet shop </div>
+                 <br>
+             <div id="tarefa3"  draggable="true" ondragstart="return dragStart(event)"> Estudar para prova de inglês </div>
+                <br>
+             <div id="tarefa4"  draggable="true" ondragstart=" dragStart(event)"> Fazer o trabalho de acessibilidade </div>
+            </div>
+                <br>
+                <div id="andamento" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">  
+                Em andamento 
+                 </div>
+
+                 <div id="feito" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"> 
+                 Concluido
+                 </div>
+           
+          
+       
+    
+
+        
+        
+</body>
+</html>
